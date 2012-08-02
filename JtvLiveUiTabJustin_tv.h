@@ -67,7 +67,7 @@ protected:
     QLabel *lab_channel, *lab_password, *lab_infos, *lab_bitrate, *lab_viewers, *lab_part, *lab_id, *lab_node;
     QLineEdit *lne_channel, *lne_password;
     QSquareIconResizingPushButton *btn_search;
-    QPushButton *btn_favourite, *btn_watch;
+    QPushButton *btn_watch;
     QFrame *fra_separator;
     QComboBox *cbo_selector;
     QHBoxLayout *layout_stream;

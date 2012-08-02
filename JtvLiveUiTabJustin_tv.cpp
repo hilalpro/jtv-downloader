@@ -27,10 +27,6 @@ JtvLiveUiTabJustin_tv::JtvLiveUiTabJustin_tv(JtvLiveChannel *live_channel, QWidg
     lab_channel = new QLabel("Channel name :");
     lab_channel->setBuddy(lne_channel);
 
-    btn_favourite = new QPushButton("F");
-    btn_favourite->setToolTip("favourite: TODO");
-    btn_favourite->setDisabled(true);
-
     lne_password = new QLineEdit;
     lab_password = new QLabel("Channel password :");
     lab_password->setBuddy(lne_password);
@@ -75,9 +71,8 @@ JtvLiveUiTabJustin_tv::JtvLiveUiTabJustin_tv(JtvLiveChannel *live_channel, QWidg
     layout_search = new QGridLayout;
     layout_search->addWidget(lab_channel, 0, 0);
     layout_search->addWidget(lne_channel, 0, 1);
-    layout_search->addWidget(btn_favourite, 0, 2);
     layout_search->addWidget(lab_password, 1, 0);
-    layout_search->addWidget(lne_password, 1, 1, 1, 2);
+    layout_search->addWidget(lne_password, 1, 1);
     layout_search->addWidget(btn_search, 0, 3, 2, 1);
 
     layout_stream = new QHBoxLayout;
